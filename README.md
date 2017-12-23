@@ -73,7 +73,7 @@ If everything goes well so far, you're good to go to add Wikitude:<br>
 8) Install the Wikitude Cordova Plugin:
 
 ```bash
-$ ionic plugin add https://github.com/Wikitude/wikitude-cordova-plugin.git
+$ ionic cordova plugin add https://github.com/Wikitude/wikitude-cordova-plugin.git
 ```
 
 9) Obtain a (free) license key from Wikitude: Go to http://www.wikitude.com/developer/licenses, register, and download a key for the Wikitude SDK. Then copy the key to the file `src/app/app.component.ts`
@@ -88,7 +88,7 @@ $ ionic plugin add https://github.com/Wikitude/wikitude-cordova-plugin.git
 11) Please remember that you can't test this plugin on a browser or emulator. You need an Android or iOS device. To test on Android, type:
 
 ```bash
-$ ionic build android
+$ ionic cordova build android
 ```
 and install the apk (see filename when the compilation finished), type: 
 
@@ -99,7 +99,7 @@ $ adb install -r your-path-to-your-apk-file
 To test on iOS, compile your project with 
 
 ```bash
-$ ionic build ios
+$ ionic cordova build ios
 ```
 
 Then you can open `WikitudeIonic3StarterApp/platforms/ios/WikitudeIonic3StarterApp.xcodeproj` with XCode, then you plug in you IOS device, then in XCode, on the top left, click `WikitudeIonic3StarterApp`, popup opens, choose your device, and then click the Build button (the triangle on the top left). When you are installing the app using XCode for the first time, you need to set a <strong>Team</strong>, under <strong>Project Settings --> General --> Signing --> Team</strong>, choose your Apple ID.
