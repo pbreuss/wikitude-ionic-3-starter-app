@@ -28,6 +28,9 @@ interface WikitudePlugin {
   setOnUrlInvokeCallback(
     onUrlInvokeCallback: (success: string) => void): void;
 
+  setJSONObjectReceivedCallback(
+    onUrlInvokeCallback: (success: JSON) => void): void;
+
   setLocation(
     latitude: any,
     longitude: any,

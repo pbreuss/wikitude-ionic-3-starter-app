@@ -57,10 +57,10 @@ var World = {
 		Once clicked the current screen is captured and user is prompted to share it (Handling of picture sharing is done in native code and cannot be done in JavaScript)
 	*/
 	captureScreen: function captureScreenFn() {
-		AR.logger.info("captureScreen called ...");
+		AR.logger.info("captureScreen called ... World.initialized: "+World.initialized);
 
 		if (World.initialized) {
-			document.location = "architectsdk://button?action=captureScreen";
+			AR.platform.sendJSONObject({action: "captureScreen"});			
 		}
 	},
 
