@@ -6,6 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
+declare var WikitudePlugin;
+
 @Component({
   templateUrl: 'app.html'
 })

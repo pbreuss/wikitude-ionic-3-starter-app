@@ -2,6 +2,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+declare var WikitudePlugin;
+
 /*
   Generated class for the ARView page.
 
