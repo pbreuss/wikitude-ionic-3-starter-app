@@ -31,7 +31,7 @@ export class ARView {
           function(fail) {
             console.log("Failed to load ARchitect World!");
           },          
-//          "www/assets/3_3dModels_1_3dModelOnTarget/index.html", // (1) if you have a IR (Image Recognition) World, use this
+//          "www/assets/07_3dModels_1_3dModelOnTarget/index.html", // (1) if you have a IR (Image Recognition) World, use this
 //          ["ir"], // (1) if you have a IR (Image Recognition) World, use this
           "www/assets/07_3dModels_6_3dModelAtGeoLocation/index.html",  // (2) if you have a GeoLocation World, use this
           ["geo"],  // (2) if you have a GeoLocation World, use this
